@@ -26,7 +26,7 @@ API_testing/
 └── README.md
 ```
 
-##⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 - **Python 3.9+
 
@@ -104,3 +104,4 @@ Change prompt inside src/main.py:
 ```bash
 contents="Your about section"
 ```
+

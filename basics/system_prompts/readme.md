@@ -1,41 +1,21 @@
-# 🚀 Gemini Python Starter Project
+# Understanding User Prompts vs System Prompts
 
-A simple Python project demonstrating how to use Google’s Gemini API with environment variables for secure API key management.
+## What is a User Prompt?
 
-This project generates a short bio using the gemini-2.5-flash model.
+A user prompt is the direct instruction or question you send to the AI model. It's what the end user asks for.
 
-## 🧩 Features
+## What is a System Prompt?
+A system prompt (or system instruction) is a hidden instruction that sets the behavior, tone, and role of the AI. It shapes how the AI responds to user prompts.
 
-- **Uses Google Gemini Generative AI API**
+## Key Takeaways
+| Aspect | User Prompt | System Prompt |
+|:-----------|:-----------|:-----------|
+| What is it? | The direct question/instruction from the user | Hidden instruction that defines AI  |
+| Who writes it? | End user / Application user | Developer / Application designer |
+| Purpose | Asks for specific information or task | Sets the tone, role, and constraints |
+| Visibility | Visible to the user	| Usually hidden from the end user | 
+| Example	| "Write a story about a robot"	| "You are a creative fiction writer" | 
+| Impact	| Determines WHAT the AI should do | Determines HOW the AI should respond | 
 
-- **Secure API key handling using .env**
-
-- **Virtual environment support**
-
-- **Beginner-friendly setup**
-
-
-## 📁 Project Structure
-```text
-my_gemini_project/
-│
-├── .env
-├── requirements.txt
-├── src/
-│   └── main.py
-└── README.md
-```
-
-## ⚙️ Prerequisites
-
-Python 3.9+
-
-pip (comes with Python)
-
-VS Code or any code editor
-
-Check Python version:
-
-python --version
-
-## 📦 Installation
+### Remember: 
+The same user prompt can produce completely different outputs depending on the system prompt!
